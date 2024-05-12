@@ -16,7 +16,7 @@ const Home = () => {
         name: nameInput,
         email: emailInput,
         number: numberInput,
-        address: addressInput
+        address: addressInput,
       };
       setTodos([...todos, newTodo]);
       setTodoInput("");
@@ -46,7 +46,7 @@ const Home = () => {
             onChange={(e) => setNameInput(e.target.value)}
           />
           <input
-            type="email"
+            type="text"
             placeholder="Email"
             name="emailInput"
             value={emailInput}
